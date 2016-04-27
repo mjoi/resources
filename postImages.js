@@ -11,9 +11,9 @@ from the codes object below.
 function postImages(arr, site) {
   // macros to be used for each site
   var codes = {
-    cl:"TAG POS=1 TYPE=INPUT:FILE FORM=ACTION:* ATTR=NAME:file CONTENT={{img}}",
-    k:"TAG POS=1 TYPE=INPUT:FILE FORM=NAME:detailForm ATTR=* CONTENT={{img}}",
-    z:"TAG POS=1 TYPE=INPUT:FILE ATTR=ID:* CONTENT={{img}}"
+    "cl":"TAG POS=1 TYPE=INPUT:FILE FORM=ACTION:* ATTR=NAME:file CONTENT={{img}}",
+    "k":"TAG POS=1 TYPE=INPUT:FILE FORM=NAME:detailForm ATTR=* CONTENT={{img}}",
+    "z":"TAG POS=1 TYPE=INPUT:FILE ATTR=ID:* CONTENT={{img}}"
   };
 
   var locations = arr[Object.keys(arr)[0]]; // get image locations from arr
