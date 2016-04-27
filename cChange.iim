@@ -1,0 +1,15 @@
+'******************************************************************************'
+NAME: cChange
+AUTHOR: Khan
+CREATED: 3-15-16
+REVISED:3-30-16
+DESC: Navigates to the edit page for a given CL ad OR deletes an ad from CL
+'******************************************************************************'
+
+'goes to user account page'
+  URL GOTO=https://accounts.craigslist.org/login/home
+'searches for ad'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://accounts.craigslist.org/login/home ATTR=ID:terms CONTENT={{title}}
+  TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:https://accounts.craigslist.org/login/home ATTR=*
+'clicks edit button'
+  TAG POS={{btn}} TYPE=INPUT:SUBMIT FORM=ACTION:* ATTR=NAME:go

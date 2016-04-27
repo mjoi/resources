@@ -1,0 +1,23 @@
+'******************************************************************************'
+'NAME: cNew
+'AUTHOR: Khan
+'CREATED: 3-15-16
+'REVISED:3-30-16
+'DESC: Navigates to new ad form on CL
+'******************************************************************************'
+
+'clicks on post link
+  TAG POS=2 TYPE=A ATTR=ID:post
+'delay for page load'
+  WAIT SECONDS=2
+'click on housing offered'
+  TAG POS=1 TYPE=LABEL FORM=ACTION:https://post.craigslist.org/* ATTR=TXT:housing<SP>offered
+  TAG POS=1 TYPE=BUTTON FORM=ACTION:https://post.craigslist.org/* ATTR=NAME:go
+'delay for pg load'
+  WAIT SECONDS=2
+'clicks continue/agree to CL terms'
+  TAG POS=2 TYPE=INPUT:RADIO FORM=ACTION:https://post.craigslist.org/* ATTR=NAME:id
+  'WAIT SECONDS=3
+  'TAG POS=1 TYPE=BUTTON ATTR=TXT:I<sp>will*
+'delay for pg load'
+  WAIT SECONDS=2

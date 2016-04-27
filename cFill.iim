@@ -1,0 +1,54 @@
+'******************************************************************************'
+NAME: cFill
+AUTHOR: Khan
+CREATED: 3-15-16
+REVISED:3-30-16
+DESC: Fills data for a given CL ad. Used to create new ads or edit/repost an ad.
+'******************************************************************************'
+
+'selects users can contact me by phone'
+  TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:postingForm ATTR=ID:contact_phone_ok CONTENT=YES
+'contact phone'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:contact_phone CONTENT={{phone}}
+'contact name'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:contact_name CONTENT={{contactName}}
+'ad title'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:PostingTitle CONTENT={{title}}
+'city'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:GeographicArea CONTENT={{city}}
+'zip'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:postal_code CONTENT={{zip}}
+'description'
+  TAG POS=1 TYPE=TEXTAREA FORM=ID:postingForm ATTR=ID:PostingBody CONTENT={{desc}}
+'sqft'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:Sqft CONTENT={{sqft}}
+'rent'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=NAME:Ask CONTENT={{rent}}
+'available month'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=NAME:moveinMonth CONTENT=%{{availMonth}}
+'available day'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=NAME:moveinDay CONTENT={{availDay}}
+'beds'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:Bedrooms CONTENT=%{{beds}}
+'baths'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:bathrooms CONTENT=%{{baths}}
+'housing type'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:housing_type CONTENT=%{{clType}}
+'laundry type'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:laundry CONTENT=%{{clLaundry}}
+'parking type'
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:parking CONTENT=%{{clParking}}
+'street'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:xstreet0 CONTENT={{street}}
+'city'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:city CONTENT={{city}}
+'state'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:region CONTENT={{state}}
+
+'various clicking to get to image upload form
+  TAG POS=1 TYPE=BUTTON ATTR=NAME:go
+  TAG POS=1 TYPE=BUTTON ATTR=TXT:continue
+'clicks classic image upload button
+  TAG POS=1 TYPE=A ATTR=ID:classic
+'delay for pg load'
+  WAIT SECONDS=2

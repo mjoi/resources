@@ -1,0 +1,62 @@
+'******************************************************************************'
+'NAME: kFill
+'AUTHOR: Khan
+'CREATED: 3-15-16
+'REVISED: 3-30-16
+'DESC:Fills data for a KSL ad.
+'******************************************************************************'
+
+'ad title'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:title CONTENT={{title}}
+'rent'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:price CONTENT={{rent}}
+'available date - format: 03/04/2015'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=ID:dateAvailable CONTENT={{availDate}}
+'beds, 0 = studio, otherwise functions normally'
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:bedrooms CONTENT=%{{beds}}
+'baths - allows half baths'
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:bathrooms CONTENT=%{{baths}}
+'year built'
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:yearBuilt CONTENT=%{{yrBuilt}}
+'sqft'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:squareFeet CONTENT={{sqft}}
+'acreage
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:acres CONTENT=%{{acres}}
+'description'
+  FRAME F=4
+  EVENT TYPE=CLICK SELECTOR="HTML>BODY" BUTTON=0
+  EVENTS TYPE=KEYPRESS SELECTOR="HTML>BODY" CHARS={{description}}
+'selects professional contact type'
+  TAG POS=2 TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:contactType
+'agent name/title'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactName CONTENT={{name}}
+'company name'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactCompany CONTENT={{company}}
+'phone # - format: (555)<SP>555-5555'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactPhone CONTENT={{phone}}
+'check boxes for utilities, payer controlled by tag position'
+'1 = tenant, 2 = landlord, 3 = n/a'
+  TAG POS={{cable}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:cablesatellite
+  TAG POS={{electric}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:electric
+  TAG POS={{garbage}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:garbage
+  TAG POS={{gas}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:gas
+  TAG POS={{hoa}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:hoafees
+  TAG POS={{internet}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:internet
+  TAG POS={{rsinsurance}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:rsinsurance
+  TAG POS={{sewer}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:sewer
+  TAG POS={{water}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:water
+'pet policy'
+  TAG POS=1 TYPE=TEXTAREA FORM=NAME:detailForm ATTR=NAME:petDetails CONTENT={{pets}}
+'smoking policy'
+  TAG POS=1 TYPE=TEXTAREA FORM=NAME:detailForm ATTR=NAME:smokeDetails CONTENT={{smoking}}
+'lease length. in months - max of 24'
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:minLeaseLength CONTENT=%{{term}}
+'security deposit'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:deposit CONTENT={{deposit}}
+'deposit refundable'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:refund CONTENT={{refundable}}
+'application fee'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:applicationFee CONTENT={{appFee}}
+'select if background check required - controlled by position'
+'1 = yes, 2 = no'
+  TAG POS={{bgCheck}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:bgcc

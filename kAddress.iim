@@ -1,0 +1,36 @@
+'******************************************************************************'
+'NAME: kAddress
+'AUTHOR: Khan
+'CREATED: 3-3-16
+'REVISED:3-30-16
+'DESC: Fills in basic info when making a new ad. Used prior to error check.
+'******************************************************************************'
+
+URL GOTO=https://www.rentler.com/landlord/
+
+'add a new property
+  TAG POS=1 TYPE=A ATTR=TXT:Add<SP>a<SP>Property
+  WAIT SECONDS=2
+'select property type,
+  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=NAME:propertyType CONTENT=%{{kType}}
+
+    'current options (as of 3/3/16) are:
+    'Single-Family Home: %0
+    'Apartment: %1
+    'Condo/Townhome: %2
+    'Multi-Family Home: %3
+    'Manufactured Home: %4
+    'Horse Livestock: %5
+    'Single Room: %6
+    'Sublease or Student Contract: %7
+
+'street address (use <SP> for spaces when creating DB)
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:addForm ATTR=ID:input_address CONTENT={{street}}
+'city
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:addForm ATTR=ID:input_city CONTENT={{city}}
+'state -- dropdown uses numbers, see states files for reference
+  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=ID:input_state CONTENT=%{{state}}
+'zip code
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:addForm ATTR=ID:input_zip CONTENT={{zip}}
+'click verify address button
+  TAG POS=1 TYPE=BUTTON FORM=NAME:addForm ATTR=TXT:Verify<SP>Address

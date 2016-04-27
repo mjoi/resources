@@ -5,5 +5,15 @@
     {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/postImages.js"},
     {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/randWait.js"},
     {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/setVariables.js"},
-    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/update.js"}
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/update.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/cSetup.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kEmail.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zSearch.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kErrors.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kSetup.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zSetup.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zOff.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPageCount.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kOff.js"},
+    {"url":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zDate.js"}
 ]}

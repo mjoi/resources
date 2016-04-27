@@ -1,0 +1,19 @@
+'******************************************************************************'
+'NAME: kSearch
+'AUTHOR: Khan
+'CREATED: 3-15-16
+'REVISED: 3-30-16
+'DESC: Searches for ad in KSL via given address.
+'******************************************************************************'
+
+'Navigates to search form'
+  URL GOTO=https://www.rentler.com/landlord/
+  TAG POS=1 TYPE=A ATTR=TXT:Listings
+  WAIT SECONDS=2
+'Performs search'
+  EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV>SECTION>DIV>DIV:nth-of-type(4)>DIV>DIV>DIV>DIV>DIV:nth-of-type(2)>DIV>DIV>DIV>DIV>A>I" BUTTON=0
+  EVENTS TYPE=KEYPRESS SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV>SECTION>DIV>DIV:nth-of-type(4)>DIV>DIV>DIV>DIV>DIV:nth-of-type(2)>DIV>DIV>DIV>DIV>FORM>INPUT" CHARS={{address}}
+  EVENT TYPE=KEYPRESS SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV>SECTION>DIV>DIV:nth-of-type(4)>DIV>DIV>DIV>DIV>DIV:nth-of-type(2)>DIV>DIV>DIV>DIV>FORM>INPUT" KEY=13
+  WAIT SECONDS=2
+'extract address from first item found
+  TAG POS=1 TYPE=DIV ATTR=CLASS:"listing-address ng-binding" EXTRACT=TXT

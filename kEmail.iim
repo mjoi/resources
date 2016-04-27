@@ -1,0 +1,18 @@
+'sends email to rentler support to add properties which have been already claimed'
+'note:uses gmail, custom solutions may be needed for each client'
+'used in in kEmail.js'
+
+'goes to gmail basic'
+URL GOTO=https://mail.google.com/mail/u/0/h/1d9j1yy5odpua/?zy=h&f=1
+
+'selects compose message'
+TAG POS=1 TYPE=A ATTR=TXT:Compose<SP>Mail
+
+'sets email to:support@rentler.com'
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:f ATTR=NAME:to CONTENT=support@rentler.com
+
+'sets subject'
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:f ATTR=NAME:subject CONTENT=Please<SP>add<SP>these<SP>properties<SP>to<SP>my<SP>account
+
+'set message, pulled from parent js script'
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:f ATTR=NAME:body CONTENT={{msg}}

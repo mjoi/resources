@@ -1,0 +1,18 @@
+'******************************************************************************'
+'NAME: zPublish
+'AUTHOR: Khan
+'CREATED: 3-15-16
+'REVISED:3-30-16
+'DESC: Publishes a Zillow Ad.
+'******************************************************************************'
+
+TAG POS=1 TYPE=BUTTON FORM=ID:* ATTR=TXT:Continue
+
+'ad title'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:property_title CONTENT={{title}}
+'description'
+  TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:property_description CONTENT={{desc}}
+'property website'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:website CONTENT={{website}}
+'publishes ad'
+  TAG POS=3 TYPE=BUTTON ATTR=TXT:Activate

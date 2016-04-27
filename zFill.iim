@@ -1,0 +1,41 @@
+'******************************************************************************'
+'NAME: zFill
+'AUTHOR: Khan
+'CREATED: 3-15-16
+'REVISED:3-30-16
+'DESC: Fills data for Zillow ads'
+'******************************************************************************'
+
+'rent'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:rent CONTENT={{rent}}
+'deposit'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:deposit CONTENT={{deposit}}
+'lease term'
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:lease_duration CONTENT=%{{term}}
+'enters addtl. terms'
+  TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:additional_terms CONTENT={{special}}
+'property type'
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:property_type CONTENT=%{{zType}}
+'beds'
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:bedrooms CONTENT=%{{beds}}
+'baths'
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:bathrooms CONTENT=%{{!baths}}
+'sqft'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:squarefeet CONTENT={{sqft}}
+'year built'
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:yearbuilt CONTENT={{yrBuilt}}
+'parking spaces'
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingspaces CONTENT=%{{parkingSpaces}}
+'parking type matrix needs to be gathered
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingtype CONTENT=%{{zParkType}}
+
+'default of no pets allowed, can be programmed to allow pets. options include
+'cat allowed & dogs allowed. if dogs are selected, small or large dogs allowed
+'are additional options. seems to be that the checkbox value
+'just needs to be changed for each option
+
+  TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:* ATTR=ID:no-pets CONTENT=YES
+'laundry in-unit?'
+  TAG POS=1 TYPE=INPUT:RADIO FORM=ID:* ATTR=ID:{{zLaundry}}
+'Option 1: ATTR=ID:laundry-in-unit
+'Option 2: ATTR=ID:no-laundry
