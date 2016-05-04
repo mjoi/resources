@@ -10,11 +10,11 @@ Each routine in the db contains the functions neccesary for a given task.
 function update(key) {
   var routine = routines[key];
   routine[setup];            // gets everything ready for data macro
-  while (cease != true) {
+  if (cease != true) {
     iPlay(routine[data]);    // fills in form data
-    removeImages(routine[adType]);
+    removeImages(routine[adType]); // not yet written
     postImages(pics, routine[adType]);
-    iPlay(routine[publish]); // activates the ad
+    routine[publish]; // activates the ad
   }
   cease = false;             // resets cease
 }

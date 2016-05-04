@@ -30,6 +30,7 @@ function zSetup(method){
       zSearch(address);
       randWait();
       iimPlay("CODE:TAG POS=1 TYPE=BUTTON ATTR=TXT:Expire");
+      cease = true; // turn on cease so controller moves to next task
       break;
   }
 }
