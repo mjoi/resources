@@ -1,7 +1,7 @@
-﻿[
-'loops and saves images from an ad page -- loop is in main.js'
-"TAG POS={{step}} TYPE=IMG ATTR=CLASS:'img-thumbnail'
-ONDOWNLOAD FOLDER=* FILE={{step}}
-TAG POS=1 TYPE=IMG ATTR=SRC:* CONTENT=EVENT:SAVEITEM
-BACK"
-]
+{
+"code":
+  "TAG POS={{step}} TYPE=IMG ATTR=CLASS:'img-thumbnail'\n
+  ONDOWNLOAD FOLDER=* FILE={{step}}\n
+  TAG POS=1 TYPE=IMG ATTR=SRC:* CONTENT=EVENT:SAVEITEM\n
+  BACK\n"
+}
