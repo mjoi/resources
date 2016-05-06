@@ -1,63 +1,63 @@
 {
 	"zNew":
 		{
-			"setup":"zSetup(new)",
+			"setup":"zSetup('new')",
 			"adType":"z",
 			"data":"zFill",
 			"publish":"iPlay(macros[zPublish])"
 		},
 	"zEdit":
 		{
-			"setup":"zSetup(edit)",
+			"setup":"zSetup('edit')",
 			"adType":"z",
 			"data":"zFill",
 			"publish":"iPlay(macros[zPublish])"
 		},
 	"zOff":
 		{
-			"setup":"zSetup(off)",
+			"setup":"zSetup('off')",
 			"adType":"z",
 			"data":"zFill",
 			"publish":"iPlay(macros[zPublish])"
 		},
 	"cNew":
 		{
-			"setup":"cSetup(new)",
+			"setup":"cSetup('new')",
 			"adType":"c",
 			"data":"cFill",
 			"publish":"cSetup('publish')"
 		},
 	"cEdit":
 		{
-			"setup":"cSetup(edit)",
+			"setup":"cSetup('edit')",
 			"adType":"c",
 			"data":"cFill",
 			"publish":"cSetup('publish')"
 		},
 	"cOff":
 		{
-			"setup":"cSetup(off)",
+			"setup":"cSetup('off')",
 			"adType":"c",
 			"data":"cFill",
 			"publish":"cSetup('publish')"
 		},
 	"kNew":
 		{
-			"setup":"kSetup(new)",
+			"setup":"kSetup('new')",
 			"adType":"k",
 			"data":"kFill",
 			"publish":"kSetup('publish')"
 		},
 	"kEdit":
 		{
-			"setup":"kSetup(edit)",
+			"setup":"kSetup('edit')",
 			"adType":"k",
 			"data":"cFill",
 			"publish":"cSetup('publish')"
 		},
 	"kOff":
 		{
-			"setup":"kSetup(off)",
+			"setup":"kSetup('off')",
 			"adType":"k",
 			"data":"kFill",
 			"publish":"kSetup('publish')"
