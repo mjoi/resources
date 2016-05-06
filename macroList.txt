@@ -8,4 +8,5 @@
 "https://raw.githubusercontent.com/nelsonkhan/resources/master/kNew.iim",
 "https://raw.githubusercontent.com/nelsonkhan/resources/master/cNew.iim",
 "https://raw.githubusercontent.com/nelsonkhan/resources/master/kEmail.iim",  
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPublish.iim"]
+"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPublish.iim",
+"https://raw.githubusercontent.com/nelsonkhan/resources/master/savePics.iim"]
