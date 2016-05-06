@@ -1,7 +1,3 @@
 {
-"code":
-  "TAG POS={{step}} TYPE=IMG ATTR=CLASS:'img-thumbnail'\n
-  ONDOWNLOAD FOLDER=* FILE={{step}}\n
-  TAG POS=1 TYPE=IMG ATTR=SRC:* CONTENT=EVENT:SAVEITEM\n
-  BACK\n"
+"code":"TAG POS={{step}} TYPE=IMG ATTR=CLASS:'img-thumbnail'\nONDOWNLOAD FOLDER=* FILE={{step}}\nTAG POS=1 TYPE=IMG ATTR=SRC:* CONTENT=EVENT:SAVEITEM\nBACK\n"
 }
