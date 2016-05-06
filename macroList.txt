@@ -10,5 +10,5 @@
 	"cNew":"https://raw.githubusercontent.com/nelsonkhan/resources/master/cNew.iim",
 	"kEmail":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kEmail.iim",  
 	"zPublish":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPublish.iim",
-	"savePics":"https://raw.githubusercontent.com/nelsonkhan/resources/master/savePics.txt"
+	"savePics":"https://raw.githubusercontent.com/nelsonkhan/resources/master/savePics.iim"
 }
