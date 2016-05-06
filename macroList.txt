@@ -1,12 +1,14 @@
-["https://raw.githubusercontent.com/nelsonkhan/resources/master/kSearch.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/zFill.iim", 
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/zNew.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/cChange.iim", 
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/kFill.iim", 
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/cFill.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/kAddress.iim", 
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/kNew.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/cNew.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/kEmail.iim",  
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPublish.iim",
-"https://raw.githubusercontent.com/nelsonkhan/resources/master/savePics.iim"]
+{
+	"kSearch":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kSearch.iim",
+	"zFill":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zFill.iim", 
+	"zNew":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zNew.iim",
+	"cChange":"https://raw.githubusercontent.com/nelsonkhan/resources/master/cChange.iim", 
+	"kFill":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kFill.iim", 
+	"cFill":"https://raw.githubusercontent.com/nelsonkhan/resources/master/cFill.iim",
+	"kAddress":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kAddress.iim", 
+	"kNew":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kNew.iim",
+	"cNew":"https://raw.githubusercontent.com/nelsonkhan/resources/master/cNew.iim",
+	"kEmail":"https://raw.githubusercontent.com/nelsonkhan/resources/master/kEmail.iim",  
+	"zPublish":"https://raw.githubusercontent.com/nelsonkhan/resources/master/zPublish.iim",
+	"savePics":"https://raw.githubusercontent.com/nelsonkhan/resources/master/savePics.iim"
+}
