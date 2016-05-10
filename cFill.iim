@@ -5,7 +5,7 @@
 'REVISED:3-30-16
 'DESC: Fills data for a given CL ad. Used to create new ads or edit/repost an ad.
 '******************************************************************************'
-PROMPT %{{c_bath_code}}
+
 'selects users can contact me by phone'
   TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:postingForm ATTR=ID:contact_phone_ok CONTENT=YES
 'contact phone'
