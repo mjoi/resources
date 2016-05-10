@@ -31,7 +31,7 @@
 'beds'
   TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:Bedrooms CONTENT=%{{beds}}
 'baths'
-  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:bathrooms CONTENT=%{{baths}}
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:bathrooms CONTENT=%{{c_bath_code}}
 'housing type'
   TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:housing_type CONTENT=%{{clType}}
 'laundry type'
