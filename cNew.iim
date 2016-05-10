@@ -6,6 +6,7 @@
 'DESC: Navigates to new ad form on CL
 '******************************************************************************'
 
+URL GOTO=craigslist.org
 'clicks on post link
   TAG POS=2 TYPE=A ATTR=ID:post
 'delay for page load'
