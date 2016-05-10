@@ -8,7 +8,7 @@
 
 URL GOTO=craigslist.org
 'clicks on post link
-  TAG POS=2 TYPE=A ATTR=ID:post
+  TAG POS=1 TYPE=A ATTR=ID:post
 'delay for page load'
   WAIT SECONDS=2
 'click on housing offered'
