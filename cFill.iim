@@ -46,9 +46,9 @@
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:region CONTENT={{state}}
 
 'various clicking to get to image upload form
-  'TAG POS=1 TYPE=BUTTON ATTR=NAME:go
-  'TAG POS=1 TYPE=BUTTON ATTR=TXT:continue
+  TAG POS=1 TYPE=BUTTON ATTR=NAME:go
+  TAG POS=1 TYPE=BUTTON ATTR=TXT:continue
 'clicks classic image upload button
-  'TAG POS=1 TYPE=A ATTR=ID:classic
+  TAG POS=1 TYPE=A ATTR=ID:classic
 'delay for pg load'
-  'WAIT SECONDS=2
+  WAIT SECONDS=2
