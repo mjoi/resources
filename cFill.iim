@@ -11,7 +11,7 @@
 'contact phone'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:contact_phone CONTENT={{phone}}
 'contact name'
-  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:contact_name CONTENT={{contactName}}
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:contact_name CONTENT={{company}}
 'ad title'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:PostingTitle CONTENT={{title}}
 'city'
