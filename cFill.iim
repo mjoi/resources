@@ -35,7 +35,7 @@
 'housing type'
   TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:housing_type CONTENT=%{{clType}}
 'laundry type'
-  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:laundry CONTENT=%{{clLaundry}}
+  TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:laundry CONTENT=%{{c_laundry_code}}
 'parking type'
   TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:parking CONTENT=%{{clParking}}
 'street'
