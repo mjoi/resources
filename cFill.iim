@@ -15,7 +15,7 @@
 'ad title'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:PostingTitle CONTENT={{title}}
 'city'
-  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:GeographicArea CONTENT={{city}}
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=NAME:GeographicArea CONTENT={{city}}
 'zip'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:postingForm ATTR=ID:postal_code CONTENT={{zip}}
 'description'

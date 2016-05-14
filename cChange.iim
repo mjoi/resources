@@ -6,7 +6,6 @@
 'DESC: Navigates to the edit page for a given CL ad OR deletes an ad from CL
 '******************************************************************************'
 
-PROMPT {{btn}}
 'goes to user account page'
   URL GOTO=https://accounts.craigslist.org/login/home
 'searches for ad'
