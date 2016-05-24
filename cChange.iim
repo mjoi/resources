@@ -9,7 +9,7 @@
 'goes to user account page'
   URL GOTO=https://accounts.craigslist.org/login/home
 'searches for ad'
-  TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://accounts.craigslist.org/login/home ATTR=ID:terms CONTENT={{title}}
+  TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://accounts.craigslist.org/* ATTR=ID:terms CONTENT={{title}}
   TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:https://accounts.craigslist.org/login/home ATTR=*
 'clicks edit buttons'
   TAG POS={{btn}} TYPE=INPUT:SUBMIT FORM=ACTION:* ATTR=NAME:go
