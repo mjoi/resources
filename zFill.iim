@@ -11,7 +11,7 @@
 'deposit'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:deposit CONTENT={{deposit}}
 'lease term'
-  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:lease_duration CONTENT=%{{term}}
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:lease_duration CONTENT=%1yr
 'enters addtl. terms'
   TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:additional_terms CONTENT={{special}}
 'property type'
