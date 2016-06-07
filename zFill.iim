@@ -15,7 +15,7 @@
 'enters addtl. terms'
   TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:additional_terms CONTENT={{special}}
 'property type'
-  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:property_type CONTENT=%{{zType}}
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:property_type CONTENT=%{{z_type_code}}
 'beds'
   TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:bedrooms CONTENT=%{{beds}}
 'baths'
