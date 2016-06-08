@@ -25,7 +25,7 @@
 'year built'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:yearbuilt CONTENT={{yr_built}}
 'parking spaces'
-  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingspaces CONTENT=%{{parkingSpaces}}
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingspaces CONTENT=%{{parking_spaces}}
 'parking type matrix needs to be gathered
   TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingtype CONTENT=%{{zParkType}}
 
