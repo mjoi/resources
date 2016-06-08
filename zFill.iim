@@ -27,7 +27,7 @@
 'parking spaces'
   TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingspaces CONTENT=%{{parking_spaces}}
 'parking type matrix needs to be gathered
-  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingtype CONTENT=%{{zParkType}}
+  TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:parkingtype CONTENT=%{{z_parking}}
 
 'default of no pets allowed, can be programmed to allow pets. options include
 'cat allowed & dogs allowed. if dogs are selected, small or large dogs allowed
