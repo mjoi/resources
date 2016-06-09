@@ -7,7 +7,7 @@
 '******************************************************************************'
 SET !REPLAYSPEED SLOW
 TAG POS=1 TYPE=BUTTON FORM=ID:* ATTR=TXT:Continue
-
+WAIT SECONDS = 5
 'ad title'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:property_title CONTENT={{title}}
 'description'
