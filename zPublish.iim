@@ -11,8 +11,9 @@ TAG POS=1 TYPE=BUTTON FORM=ID:* ATTR=TXT:Continue
 'ad title'
   TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:property_title CONTENT={{title}}
 'description'
-  TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:property_description CONTENT={{desc}}
+  TAG POS=1 TYPE=TEXTAREA FORM=ID:* ATTR=ID:property_description CONTENT={{description}}
 'property website'
-  TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:website CONTENT={{website}}
+  'TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:website CONTENT={{website}}
+  'website functionality to be added later
 'publishes ad'
   TAG POS=3 TYPE=BUTTON ATTR=TXT:Activate
