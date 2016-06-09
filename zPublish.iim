@@ -16,4 +16,4 @@ WAIT SECONDS = 5
   'TAG POS=1 TYPE=INPUT:TEXT FORM=ID:* ATTR=ID:website CONTENT={{website}}
   'website functionality to be added later
 'publishes ad'
-  TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+  TAG POS=1 TYPE=BUTTON ATTR=TXT:Activate
