@@ -5,7 +5,7 @@
 'REVISED:3-30-16
 'DESC: Publishes a Zillow Ad.
 '******************************************************************************'
-SET !REPLAYSPEED SLOW
+
 TAG POS=1 TYPE=BUTTON FORM=ID:* ATTR=TXT:Continue
 WAIT SECONDS = 5
 'ad title'
