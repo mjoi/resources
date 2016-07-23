@@ -29,7 +29,7 @@ URL GOTO=https://www.rentler.com/landlord/
 'city
   TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:addForm ATTR=ID:input_city CONTENT={{city}}
 'state -- dropdown uses numbers, see states files for reference
-  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=ID:input_state CONTENT=%{{state}}
+  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=ID:input_state CONTENT=%{{k_state}}
 'zip code
   TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:addForm ATTR=ID:input_zip CONTENT={{zip}}
 'click verify address button
