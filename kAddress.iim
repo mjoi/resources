@@ -12,7 +12,7 @@ URL GOTO=https://www.rentler.com/landlord/
   TAG POS=1 TYPE=A ATTR=TXT:Add<SP>a<SP>Property
   WAIT SECONDS=2
 'select property type,
-  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=NAME:propertyType CONTENT=%{{kType}}
+  TAG POS=1 TYPE=SELECT FORM=NAME:addForm ATTR=NAME:propertyType CONTENT=%{{k_type_code}}
 
     'current options (as of 3/3/16) are:
     'Single-Family Home: %0
