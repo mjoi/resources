@@ -12,3 +12,9 @@
   TAG POS=2 TYPE=INPUT:RADIO FORM=NAME:form.add ATTR=NAME:managementType
 'click button to complete adding new property
   TAG POS=1 TYPE=BUTTON FORM=NAME:form.add ATTR=TXT:Add<SP>Property
+'go back to landlord dashboard'  
+  URL GOTO=https://www.rentler.com/landlord
+'edit first (most recently added) property'
+  TAG POS=1 TYPE=A ATTR=TXT:EDIT
+'click update property to proceed to edit property form'
+  TAG POS=1 TYPE=BUTTON FORM=NAME:form.edit ATTR=TXT:Update<SP>Property
