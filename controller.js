@@ -212,7 +212,9 @@ function setVariables()
   // set availability
   iimSet("availDay", new Date(ad["available"]).getUTCDate());
   iimSet("availMonth", new Date(ad["available"]).getUTCMonth());
-  iimSet("availYear", new Date(ad["available"]).getUTCDate());
+  iimSet("availYear", new Date(ad["available"]).getUTCFullYear());
+  // set k_state for ksl/rentler ads
+  iimSet('k_state', us_states[ad.state]);
   //alert(contact.company);
   //iimPlay("CODE: TAG POS=1 TYPE=SELECT FORM=ID:postingForm ATTR=ID:parking CONTENT=%{{c_parking_code}}");
 
@@ -252,6 +254,16 @@ function wait(seconds)
   iimPlay("CODE:WAIT SECONDS=" + seconds);
 
 // wait X number of seconds
+}
+
+function normal_date() {
+  // creates a human readable date string that works for rentler
+  // tested working - 7/25/16
+  var date = '';
+  date += new Date(ad["available"]).getUTCMonth() +'/';
+  date += new Date(ad["available"]).getUTCDate() + '/';
+  date += new Date(ad["available"]).getUTCFullYear();
+  ad.availDate = date;
 }
 
 ////////////////////////////// zillow functions ////////////////////////////////
@@ -462,11 +474,12 @@ function kSetup(task)
   switch(task)
   {
     case "new":
+    // fills in ad detail to create a new ad
       kErrors();
       if (addressErrors.length != 0 || claimedErrors.length != 0)
       {
         cease = true;
-        kEmail();
+        //kEmail();
       }
       else {
         iPlay("kNew");
@@ -499,8 +512,8 @@ function kErrors()
 {
 	// setup
 	var checks = [ // checks format "error-type": logArray
-		["verifyAddressError", "addressErrors"],
-		["propertyService.duplicatePropertyError", "claimedErrors"]
+		["verifyAddressError", addressErrors],
+		["propertyService.duplicatePropertyError", claimedErrors]
 	];
 
 	// actions
@@ -542,6 +555,7 @@ function kEmail()
 
 // generates an error email via gmail for rentler support based on kErrors
 }
+
 
 ///////////////////////////////// craigslist functions /////////////////////////
 function cSetup(task)
@@ -607,6 +621,11 @@ for (var i = 0, len = adsDB.length; i < len; i++) {
 // create a new object within ads for each ad using ad id as key
 }
 // -- end load ads
+
+
+// object for matching US states to their numeric value when sorted alphabetically
+
+var us_states = {"AL":1, "AK":2, "AS":3, "AZ":4, "AR":5, "CA":6, "CO":7, "CT":8, "DE":9, "DC":10, "FM":11, "FL":12, "GA":13, "GU":14, "HI":15, "ID":16, "IL":17, "IN":18, "IA":19, "KS":20, "KY":21, "LA":22, "ME":23, "MH":24, "MD":25, "MA":26, "MI":27, "MN":28, "MS":29, "MO":30, "MT":31, "NE":32, "NV":33, "NH":34, "NJ":35, "NM":36, "NY":37, "NC":38, "ND":39, "MP":40, "OH":41, "OK":42, "OR":43, "PW":44, "PA":45, "PR":46, "RI":47, "SC":48, "SD":49, "TN":50, "TX":51, "UT":52, "VT":53, "VI":54, "VA":55, "WA":56, "WV":57, "WI":58, "WY":59};
 
 // load routine macro combos
 var routines = {
@@ -682,13 +701,15 @@ for (var step in tasks)
 	key = task["ad_id"]; // stores ad_id for external database
 	script = task["script"]; // stores script to run
 	ad = ads[key]; // loads current ad
+  normal_date(); // crates a human readable date and pushes it to the ad object
   logs +=
     "RUNNING:"+ script +"\n"+
     "-------------------------\n"
     "AD:"+ ad.nickname + "\n";
 	// adds header to logfile
 	//getPics(); // downloads pictures for current ad
-	eval(script); // performs assigned script
+	//eval(script); // performs assigned script
+  iPlay('kFill');
   window.console.log(logs); // display logfile in the console
 }
 
@@ -698,3 +719,5 @@ for (var step in tasks)
 // zNew task working
 // zOff appears to be working
 // zEdit appears to be working
+// kAddress working
+// kFill: contact type not working - RuntimeError: element INPUT specified by NAME:contactType was not found, line 30 (Error code: -921)
