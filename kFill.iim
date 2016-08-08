@@ -26,6 +26,7 @@
   FRAME F=4
   EVENT TYPE=CLICK SELECTOR="HTML>BODY" BUTTON=0
   EVENTS TYPE=KEYPRESS SELECTOR="HTML>BODY" CHARS={{description}}
+  FRAME F=0
 'selects professional contact type'
   TAG POS=2 TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:contactType
 'agent name/title'
