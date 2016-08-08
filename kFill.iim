@@ -17,7 +17,7 @@
 'baths - allows half baths'
   TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:bathrooms CONTENT=%{{baths}}
 'year built'
-  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:yearBuilt CONTENT=%{{yrBuilt}}
+  TAG POS=1 TYPE=SELECT FORM=NAME:detailForm ATTR=NAME:yearBuilt CONTENT=%{{yr_built}}
 'sqft'
   TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:squareFeet CONTENT={{sqft}}
 'acreage
