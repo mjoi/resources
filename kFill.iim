@@ -60,4 +60,4 @@
   TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:applicationFee CONTENT={{appFee}}
 'select if background check required - controlled by position'
 '1 = yes, 2 = no'
-  TAG POS={{bgCheck}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:bgcc
+  TAG POS={{bg_check}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:bgcc
