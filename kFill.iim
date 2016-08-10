@@ -43,7 +43,7 @@
   TAG POS={{gas}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:gas
   TAG POS={{hoa}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:hoafees
   TAG POS={{internet}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:internet
-  TAG POS={{rsinsurance}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:rsinsurance
+  TAG POS={{insurance}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:rsinsurance
   TAG POS={{sewer}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:sewer
   TAG POS={{water}} TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:water
 'pet policy'
