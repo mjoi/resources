@@ -30,7 +30,7 @@
 'selects professional contact type'
   TAG POS=2 TYPE=INPUT:RADIO FORM=NAME:detailForm ATTR=NAME:contactType
 'agent name/title'
-  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactName CONTENT={{name}}
+  TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactName CONTENT={{first_name}}
 'company name'
   TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:detailForm ATTR=NAME:contactCompany CONTENT={{company}}
 'phone # - format: (555)<SP>555-5555'
